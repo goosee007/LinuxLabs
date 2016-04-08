@@ -1,0 +1,5 @@
+adam		$2870
+diane		$1329
+jane		$777
+mike		$568
+louis		$79

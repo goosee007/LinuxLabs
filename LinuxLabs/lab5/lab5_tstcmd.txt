@@ -1,0 +1,1062 @@
+    1  mkdir lab1
+    2  ls
+    3  cd lab1
+    4  ls
+    5  vi assignment1
+    6  cat assignment1
+    7  rm assignment1
+    8  ls
+    9  mkdir lab2
+   10  ls
+   11  cd lab2
+   12  vi nf
+   13  ls -l . | wc -l
+   14  ls
+   15  find . -maxdepth 1 -type f | wc -l
+   16  ls -l
+   17  vi nf
+   18  nf
+   19  export PATH=$PATH:.
+   20  chmod 777 nf
+   21  ls
+   22  nf
+   23  touch file1 file2 file3
+   24  nf
+   25  ls
+   26  rm file2
+   27  nf
+   28  rm file3 file1
+   29  ls
+   30  nf
+   31  vi grade
+   32  echo $PATH
+   33  vi grade
+   34  chmod 777 grade
+   35  grade
+   36  vi grade
+   37  grade
+   38  cat grade
+   39  vi grade
+   40  grade
+   41  vi grade
+   42  expr 1 + 1
+   43  vi grade
+   44  grade
+   45  vi grade
+   46  grade
+   47  vi grade
+   48  grade
+   49  vi grade
+   50  grade
+   51  vi grade
+   52  grade
+   53  vi grade
+   54  ls
+   55  ls -l
+   56  rm =50
+   57  ls
+   58  who
+   59  who > users
+   60  ls
+   61  cat users
+   62  wc -l users
+   63  wc -l < users
+   64  who | wc -l
+   65  who | wc -c
+   66  who | wc -w
+   67  date
+   68  pwd
+   69  ls n*
+   70  ls t*
+   71  ls t* 2> errors
+   72  cat errors
+   73  date;pwd
+   74  date; pwd
+   75  ps
+   76  clear
+   77  ls
+   78  cat errors
+   79  ps -f
+   80  who | ps -f | wc 
+   81  who | ps -f 
+   82  cd
+   83  ls
+   84  mkdir exercises
+   85  ls
+   86  cd exercises
+   87  ls
+   88  touch feb96 mar98 memo1 memo10 memo2 memo2.sv
+   89  ls
+   90  touch jan(12,19,5).02
+   91  touch jan[12,19,5].02
+   92  ls
+   93  rm jan[12,19,5].02
+   94  ls
+   95  touch jan12.02 jan19.02 jan26.02 jan5.02
+   96  ls
+   97  touch jan95 jan96 jan97 jan98
+   98  ls
+   99  echo *
+  100  echo m[a-df-z]*
+  101  echo jan*
+  102  echo *[!0-9]
+  103  echo [A-Z]*
+  104  echo *.*
+  105  echo ?????
+  106  echo jan?? feb?? mar??
+  107  echo *02
+  108  echo *.*
+  109  echo [fjm][ae][bnr]*
+  110  ls | wc -l
+  111  who | wc -l
+  112  ls *.c | wc -l
+  113  who | sort
+  114  cp memo1..
+  115  cp memo1 ..
+  116  plotdata 2>errors &
+  117  cd; pwd
+  118  rm *.0
+  119  rm *.o
+  120  clear
+  121  ls
+  122  cd lab2
+  123  ls
+  124  cat grade
+  125  ls
+  126  cd lab 2
+  127  cd lab2
+  128  ls | wc -l
+  129  cd
+  130  ls
+  131  ls | wc -l ?????
+  132  who
+  133  who | wc -l
+  134  man wc
+  135  ls
+  136  mkdir labs
+  137  who | wc -l mv lab1/* /users/ops435_161sa09/labs
+  138  mv lab1/* /users/ops435_161sa09/labs
+  139  mv: cannot stat `lab1/*': No such file or directory
+  140  touch file.c file2.c file.o file2.o
+  141  ls *.c | wc -l rm *.o
+  142  ls
+  143  who | sort cd; pwd
+  144  vi
+  145  `date`
+  146  cnf Wed
+  147  echo `date`
+  148  plotdata 2>errors &
+  149  who
+  150  who | grep ysjung4
+  151  who | grep *ops435
+  152  who | grep '*ops435'
+  153  who | grep ?ops
+  154  who | grep mortak
+  155  who | grep '*' ops
+  156  ls
+  157  cd exercises
+  158  echo 1 + 1
+  159  echo $((1+1))
+  160  results=$((1+1))
+  161  echo $results
+  162  vi grade.sh
+  163  ls
+  164  cd lab2
+  165  vi grade.sh
+  166  grade.sh
+  167  vi grade.sh
+  168  results1=$((1+1))
+  169  results2=$(($results1 \* 20)
+  170  )
+  171  echo $results2
+  172  results2=(($results1 \* 20))
+  173  results2=$(($results1 \* 20))
+  174  results2=$(($results1 '*' 20))
+  175  results2=$((20 \* $results1))
+  176  results2=$((20 '*' $results1))
+  177  results2=$((20 * $results1))
+  178  echo $results2
+  179  results3=$(expr $results1 * 20)
+  180  results3=$((expr $results1 * 20))
+  181  results3=$((expr $results1 \* 20))
+  182  results3=$((expr 20 \* $results1))
+  183  results3=$((expr 20 * $results1))
+  184  results3=$(expr 20 * $results1)
+  185  results3=$(expr 20 */ $results1)
+  186  results3=$(expr 20 \* $results1)
+  187  echo $results3
+  188  results5=`expr 2 + 2`
+  189  echo $results5
+  190  cd lab2
+  191  vi grade.sh
+  192  grade.sh
+  193  cat grade.sh
+  194  clear
+  195  vi deposit.sh
+  196  cd ls
+  197  ls
+  198  cd exercises
+  199  ls
+  200  vi rem
+  201  chmod a+x rem
+  202  rem 'Stromboli Pizza'
+  203  cat phonebook
+  204  vi rem2
+  205  add 'Stromboli Pizza' 973-555-9478
+  206  cat phonebook
+  207  chmod a+x rem2
+  208  rem2 Stromboli Pizza
+  209  cat phonebook
+  210  cd /tmp
+  211  ls
+  212  cd ..
+  213  ls
+  214  cd ~
+  215  ls
+  216  clear
+  217  vi first
+  218  vi second
+  219  cdmod a+x first second
+  220  cmod a+x first second
+  221  chmod a+x first second
+  222  ls
+  223  first
+  224  cd
+  225  cd labs
+  226  ls
+  227  cd lab3
+  228  ls
+  229  cat deposit
+  230  cat deposit.sh
+  231  vi deposit.sh
+  232  cat oct_trans.sh
+  233  vi tstpass
+  234  chmod a+x tstpass
+  235  tstpass 10
+  236  vi tstpass
+  237  tstpass 10
+  238  vi tstpass
+  239  tstpass 10
+  240  vi grades.sh
+  241  chmod a+x grades.sh
+  242  grades.sh 50
+  243  grades.sh 55
+  244  grades.sh 50
+  245  chmod a+x grades.sh
+  246  vi grades.sh
+  247  grades.sh 50
+  248  vi tstpass
+  249  tstpass 10
+  250  vi tstpass
+  251  tstpass 10
+  252  vi tstpass
+  253  tstpass 10
+  254  x=3
+  255  y=4
+  256  awk '{print '$x' + '$y'}'
+  257  echo "" | awk '{print '$x' + '$y'}'
+  258  echo "" | awk '{print '$x' >= '$y'}'
+  259  echo "" | awk '{print '$x' ge '$y'}'
+  260  echo "" | awk '{print '$x' le '$y'}'
+  261  echo "" | awk '{print '$y' - '$3'}'
+  262  echo "" | awk '{print '$y' - '$x'}'
+  263  vi tstpass
+  264  cd labs
+  265  cd lab3
+  266  ls
+  267  vi savings
+  268  vi tstpass
+  269  chmod a+x savings
+  270  cat tstpass
+  271  tstpass savings
+  272  vi tstpass
+  273  tstpass savings
+  274  vi tstpass
+  275  tstpass savings
+  276  vi tstpass
+  277  vi savings
+  278  vi tstpass
+  279  tstpass
+  280  vi tstpass
+  281  vi arg2
+  282  ls
+  283  cd 
+  284  ls
+  285  cd exercises
+  286  ls
+  287  vi arg2
+  288  vi args2
+  289  args2 deposit 1200
+  290  vi args2
+  291  args2 deposit 1200
+  292  cd
+  293  cd labs
+  294  cd lab3
+  295  ls
+  296  vi tstpass
+  297  vi deposit.sh
+  298  cat deposit.sh
+  299  vi tstpass
+  300  tstpass deposit 1200
+  301  vi tstpass
+  302  tstpass deposit 1200
+  303  vi tstpass
+  304  tstpass deposit 1200
+  305  vi tstpass
+  306  tstpass deposit 1200
+  307  vi tstpass
+  308  tstpass deposit 1200
+  309  vi tstpass
+  310  tstpass deposit 1200
+  311  vi tstpass
+  312  tstpass deposit 1200
+  313  vi tstpass
+  314  tstpass deposit 1200
+  315  vi deposit.sh
+  316  ls
+  317  vi debit.sh
+  318  cat show_balance
+  319  cd
+  320  quit
+  321  exit
+  322  cd labs
+  323  cd lab3
+  324  ls
+  325  cat deposit.sh
+  326  cat tstpass
+  327  clear
+  328  ls
+  329  cat savings
+  330  cat deposit.sh
+  331  man source
+  332  vi deposit.sh
+  333  cd labs
+  334  cd lab3
+  335  ls
+  336  cp deposit.sh old_dp
+  337  ls
+  338  vi balance
+  339  cat balanace
+  340  cat balance
+  341  vi deposit.sh
+  342  cat deposit.sh
+  343  vi deposit.sh
+  344  a=10
+  345  b=20
+  346  echo (($b - $a)) > balance
+  347  echo (( $b - $a )) > balance
+  348  echo (($b - $a)) > balance
+  349  echo (($b - $a))
+  350  echo ($b - $a)
+  351  echo (("$b" - "$a"))
+  352  echo (($b-$a))
+  353  echo ((expr $b-$a))
+  354  echo (expr $b-$a)
+  355  echo (expr $b - $a)
+  356  echo ($b - $a)
+  357  ($b - $a)
+  358  (($b - $a))
+  359  var=clear
+  360  clear
+  361  a=10
+  362  b=20
+  363  echo '(($b + $a))'
+  364  echo (($b + $a))
+  365  echo $(($b + $a))
+  366  echo $(($b - $a))
+  367  cat balance
+  368  clear 
+  369  ls
+  370  vi debit.sh
+  371  cd labs
+  372  cd lab3
+  373  ls
+  374  cat balance
+  375  rm 1200 390
+  376  ls
+  377  cat savingsaccount
+  378  cat savingsacct
+  379  rm savingsacct
+  380  ls
+  381  cat tstpass
+  382  vi deposit.sh
+  383  echo 0 > test.txt
+  384  cat test.txt
+  385  vi show_balance
+  386  vi oct_trans.sh
+  387  chmod a+x oct_trans.sh
+  388  oct_trans.sh 1200
+  389  vi oct_trans.sh
+  390  oct_trans.sh 1200
+  391  vi oct_trans.sh
+  392  oct_trans.sh 1200
+  393  cd labs
+  394  cd lab3
+  395  ls
+  396  cat grade.sh
+  397  cat depositbk
+  398  cat deposit.sh
+  399  echo $2 > $1
+  400  cat $1
+  401  vi deposit.sh
+  402  deposit.sh balance 1200
+  403  cd labs
+  404  cd lab3
+  405  ls
+  406  cat old_dp
+  407  vi old_dp
+  408  cp old_dp2
+  409  cp old_dp old_dp2
+  410  vi old_dp
+  411  old_dp balance 40
+  412  cat balance
+  413  vi old_dp
+  414  old_dp balance 40
+  415  vi old_dp
+  416  old_dp balance 40
+  417  cat old_dp
+  418  old_dp balance 40
+  419  cat balance
+  420  ls
+  421  cp old_dp deposit.sh
+  422  cat deposit.sh
+  423  vi deposit.sh
+  424  cp old_dp debit
+  425  vi debit
+  426  cat debit.sh
+  427  cp debit.sh old_dbt
+  428  cp debit debit.sh
+  429  debit.sh balance 30
+  430  vi debit.sh
+  431  debit.sh balance 30
+  432  cat debit
+  433  cat balance
+  434  deposit.sh balance 1200
+  435  cat balance
+  436  debit.sh balance 30
+  437  cat balance
+  438  clear
+  439  ls
+  440  mkdir backup
+  441  ls
+  442  vi balance
+  443  vi oct_trans.sh
+  444  ./deposit.sh balance 1200
+  445  cat balance
+  446  debit.sh balance 1200
+  447  cat balance
+  448  vi oct_trans.sh
+  449  vi show balance
+  450  vi show_balanace
+  451  cat show_balance
+  452  show_balance balance
+  453  v show_balance
+  454  vi show_balance
+  455  show_balance balance
+  456  cat balance
+  457  mv show_balance show_balance.sh
+  458  ls
+  459  vi oct_trans.sh
+  460  oct_trans.sh
+  461  mv -t ~/labs/labs3 bal.txt deposit.bk
+  462  mv -t ~/labs/labs3/backup bal.txt deposit.bk
+  463  mv -t debit depositbk ~/labs/labs3/backup 
+  464  mv  debit depositbk ~/labs/labs3/backup 
+  465  mv  debit depositbk backup 
+  466  cd backup
+  467  ls
+  468  cd ..
+  469  ls
+  470  mv  nu old_dbt old_dp2 savings test.txt backup 
+  471  ls
+  472  mv nf.sh bal.txt run tstpass old_dp backup
+  473  ls
+  474  cat grade.sh
+  475  cat grades.sh
+  476  vi balance
+  477  show_balance.sh
+  478  show_balance.sh balance
+  479  oct_trans.sh
+  480  vi show_balance.sh
+  481  show_balance.sh balance
+  482  vi balance
+  483  vi oct_trans.sh
+  484  clear
+  485  cd 
+  486  ls
+  487  mkdir assignmt
+  488  ls
+  489  mv ed. errors *.c *.o memo1 first second exercises
+  490  ls
+  491  cd test
+  492  ls
+  493  cd 
+  494  mv assignmt assignmts
+  495  ls
+  496  quit
+  497  cnf quit
+  498  exit
+  499  ls
+  500  cd backup
+  501  cd exercises
+  502  ls
+  503  cd
+  504  ls
+  505  cd test
+  506  ls
+  507  cd ..
+  508  cd labs
+  509  cd labs3
+  510  cd lab3
+  511  ls
+  512  cd
+  513  cd labs/backup
+  514  ls
+  515  cat old_dp
+  516  cat depositbk
+  517  cat tstpass
+  518  cd
+  519  ls
+  520  cd exercises
+  521  ls
+  522  cat args
+  523  cat pop.sh
+  524  cd ..
+  525  cd labs
+  526  ls
+  527  cd lab3
+  528  ls
+  529  cd 
+  530  l
+  531  cd assignmts/
+  532  ls
+  533  cat assign1kay 
+  534  cat as1.sh 
+  535  vi as1.sh
+  536  echo $0
+  537  help echo
+  538  echo -n $0
+  539  x=2
+  540  y=1
+  541  echo $y + $x \n
+  542  echo $y + $x \\n
+  543  cd assignmts/
+  544  ls
+  545  vi as1.sh
+  546  chmod u+x as1.sh
+  547  as1.sh abc
+  548  vi as1.sh
+  549  vi as1.sh
+  550  fg
+  551  jobs
+  552  fg 1
+  553  fg
+  554  as1.sh abc
+  555  help set
+  556  fg 1
+  557  echo stuff > file
+  558  ls
+  559  cat file
+  560  fg
+  561  as1.sh 
+  562  ls
+  563  cat file
+  564  ls
+  565  cd
+  566  exercises
+  567  cd exercises/
+  568  ls
+  569  cat pop.sh
+  570  pop.sh cats dogs mice
+  571  pop.sh cats dogs mice > file
+  572  cat file
+  573  vi pop.sh
+  574  pop.sh cats dogs mice > file
+  575  cat file
+  576  cd 
+  577  cd assignmts/
+  578  exit
+  579  quit
+  580  fg
+  581  exit
+  582  passwd
+  583  ls
+  584  cd assignmts
+  585  ls
+  586  cd animals
+  587  ls
+  588  cat pets
+  589  man read
+  590  read 2
+  591  man read
+  592  cat pets
+  593  clear
+  594  r.
+  595  ls
+  596  cd exercises
+  597  ls
+  598  touch usrnm.sh
+  599  vi usrnm.sh
+  600  chmod u+x usrnm.sh
+  601  usrnm.sh
+  602  clear
+  603  man paste
+  604  echo home
+  605  echo $?
+  606  ls home
+  607  echo $?
+  608  name=
+  609  test $name = julio
+  610  exit
+  611  cd exercises
+  612  ls
+  613  cp phonebook phone2
+  614  echo $?
+  615  cp nosuch backup
+  616  echo $?
+  617  who
+  618  who | grep ulee1
+  619  echo $?
+  620  who | grep fred
+  621  echo $?
+  622  vi on
+  623  chmod u+x on
+  624  on
+  625  chmod u+x on
+  626  vi on
+  627  on
+  628  on ulee1
+  629  on Tom1
+  630  vi on
+  631  on Tom1
+  632  vi next
+  633  chmod u+x next
+  634  nest
+  635  echo $?
+  636  next
+  637  echo $?
+  638  vi next
+  639  next
+  640  echo $?
+  641  ls
+  642  cd exercises
+  643  ls
+  644  cat phone2
+  645  echo $?
+  646  clear
+  647  ls
+  648  who
+  649  on edulaj
+  650  on tony
+  651  vi on
+  652  on edulaj
+  653  on tony
+  654  vi on
+  655  on tony
+  656  vi on
+  657  on edulaj
+  658  on tony
+  659  on
+  660  ls
+  661  test -d memo
+  662  echo $?
+  663  test -f memo
+  664  echo $?
+  665  test -f memo2
+  666  echo $?
+  667  [ -f memo ]
+  668  echo $?
+  669  [ -f memo2 ]
+  670  echo $?
+  671  touch memo
+  672  chmod a-w memo
+  673  [ -w memo ]
+  674  echo $?
+  675  man source
+  676  ls -l memo
+  677  rm memo
+  678  touch memo
+  679  ls
+  680  ls -l memo
+  681  vi name.sh
+  682  chmod u+x name.sh
+  683  name.sh
+  684  name=
+  685  test $name = julio
+  686  test "$name" = julio
+  687  echo $?
+  688  echo '$my vars'
+  689  vi deposit.sh
+  690  cd labs
+  691  cd lab4
+  692  v
+  693  vi deposit.sh
+  694  cd labs
+  695  ls
+  696  cd ..
+  697  ls
+  698  cd 
+  699  ls
+  700  cd labs
+  701  ls
+  702  cd lab3
+  703  ls
+  704  cd ..
+  705  mkdir lab4
+  706  ls
+  707  cd lab3
+  708  ls
+  709  cp balance deposit.sh debit.sh oct_trans.sh ../~/labs/lab4
+  710  cp balance deposit.sh debit.sh oct_trans.sh ~/labs/lab4
+  711  cd ../lab4
+  712  ls
+  713  vi deposit.sh
+  714  ./deposit.sh balance 100 200
+  715  cat vi
+  716  cat deposit.sh
+  717  vi deposit.sh
+  718  ./deposit.sh balance 100 200
+  719  cd ..
+  720  cd lab3
+  721  ls
+  722  cat deposit.sh
+  723  cat oct_trans.sh
+  724  cd ../lab4
+  725  ls
+  726  vi deposit.sh
+  727  ./deposit.sh balance 100 200
+  728  vi deposit.sh
+  729  ./deposit.sh balance 100 200
+  730  vi deposit.sh
+  731  ./deposit.sh balance 100 200
+  732  vi deposit.sh
+  733  ./deposit.sh balance 100 200
+  734  vi deposit.sh
+  735  touch test.sh
+  736  chmod u+x test.sh
+  737  vi test.sh
+  738  test.sh in wonderland
+  739  vi test.sh
+  740  test.sh alice in wonderland
+  741  vi test.sh
+  742  test.sh alice in wonderland
+  743  vi test.sh
+  744  test.sh alice in wonderland
+  745  deposit.sh 
+  746  vi test.sh
+  747  test.sh alice in wonderland
+  748  vi deposit.sh
+  749  deposit.sh 10 20
+  750  ls
+  751  vi deposit.sh
+  752  touch testfile.txt
+  753  deposit.sh 10 20
+  754  ls
+  755  cat testfile.txt
+  756  rm 0
+  757  ls
+  758  deposit.sh 10 20
+  759  cat testfile.txt
+  760  vi deposit.sh
+  761  deposit.sh 10 20
+  762  cat testfile.txt
+  763  deposit.sh 10 20
+  764  vi deposit.sh
+  765  deposit.sh 10 20
+  766  dp="test"
+  767  echo "$dp" > testfile.txt
+  768  ls
+  769  cat testfile.txt
+  770  cd ..
+  771  cd lab3
+  772  ls
+  773  cat balance
+  774  cat deposit.sh
+  775  deposit.sh balance 20
+  776  cat balance
+  777  deposit.sh balance 20
+  778  cat balance 
+  779  cat debit.sh
+  780  debit.sh balance 5
+  781  cat balance
+  782  ls
+  783  show_balance.sh
+  784  show_balance.sh balance
+  785  cat show_balance.sh
+  786  cat oct_trans.sh
+  787  oct_trans.sh
+  788  cd ../lab4
+  789  ls
+  790  deposit.sh balance 10 20
+  791  EXP HELP=Y
+  792  'EXP HELP=Y'
+  793  lsEXP-00019: failed to process parameters, type 'EXP HELP=Y' for help
+  794  EXP-00000: Export terminated unsuccessfully
+  795  deposit.sh balance 10 20
+  796  clear
+  797  deposit.sh balance 10 20
+  798  cd labs
+  799  deposit.sh balance 10 20
+  800  cat balance
+  801  deposit.sh balance 10 20
+  802  cat balance
+  803  deposit.sh balance 10 20
+  804  cd /labs/lab4
+  805  cd ~/labs/lab4
+  806  deposit.sh balance 10 20
+  807  vi deposit.sh
+  808  cd labs
+  809  cd lab4
+  810  ls
+  811  deposit.sh balance 10 20
+  812  cat deposit.sh
+  813  clear
+  814  ls
+  815  debit.sh balance 5 2
+  816  ls
+  817  rm 10
+  818  ls
+  819  cat balance
+  820  debit.sh balance 5 2
+  821  ls
+  822  cat balance
+  823  cat balance 15 20
+  824  debit.sh balance 10 20
+  825  cat balance 15 20
+  826  cat balance
+  827  cat deposit
+  828  cat deposit.sh
+  829  tree
+  830  clear
+  831  cd ../lab3
+  832  ls
+  833  cat debit
+  834  cat debit.sh
+  835  cd ..
+  836  cd lab4
+  837  debit.sh balance 20 10
+  838  clear
+  839  debit.sh balance 20 10
+  840  clear
+  841  debit.sh balance 20 10
+  842  ./debit.sh balance 20 10
+  843  cat balance
+  844  ./debit.sh balance 20 10
+  845  cat balance
+  846  ./debit.sh balance 20 10
+  847  ls
+  848  cat balance
+  849  cat debit.sh
+  850  clear
+  851  cd labs
+  852  cd lab4
+  853  l
+  854  vi debit.sh
+  855  cd labs
+  856  cd lab4
+  857  ls
+  858  vi debit.sh
+  859  ./debit.sh 10 5
+  860  ./debit.sh balance 10 5
+  861  cat balance
+  862  clear
+  863  cat balance
+  864  ls
+  865  ls -l
+  866  cat debit.sh
+  867  cat balance
+  868  vi balance
+  869  &
+  870  fg
+  871  a=20
+  872  echo $((a - 10))
+  873  echo `expr $a - 10`
+  874  fg
+  875  ./debit.sh balance 10 5
+  876  cat debit.sh
+  877  fg
+  878  ./debit.sh balance 10 5
+  879  fg
+  880  ./debit.sh balance 10 5
+  881  cat balance
+  882  vi balancew
+  883  vi balance
+  884  vi 
+  885  fg
+  886  ./debit.sh balance 10 5
+  887  fg
+  888  ./debit.sh balance 10 5
+  889  fg
+  890  ./debit.sh balance 10 5
+  891  cat balance
+  892  vi decisions
+  893  ls
+  894  cd labs
+  895  ls
+  896  cd lab4
+  897  ls
+  898  vi debit.sh
+  899  vi decision
+  900  vi decisions
+  901  clear
+  902  cd \labs\labs4
+  903  cd /labs/labs4
+  904  cd ~/labs/labs4
+  905  cd ~/labs
+  906  cd lab4
+  907  ls
+  908  ./debit.sh balance
+  909  cat debit.sh
+  910  clear
+  911  ls
+  912  cat decisions
+  913  chmod u+x decisions
+  914  ls
+  915  decisions
+  916  decisions balance
+  917  vi balance
+  918  cat decisions
+  919  decisions balance
+  920  vi decisions
+  921  decisions balance
+  922  cat balance
+  923  exit
+  924  ls
+  925  cd labs
+  926  cd lab4
+  927  exit
+  928  cd labs
+  929  cd lab4
+  930  ls
+  931  cat deposit.sh
+  932  vi decisions
+  933  decisions balance
+  934  cat balance
+  935  cat decisions
+  936  vim tutor
+  937  who
+  938  whoami
+  939  vim tutor
+  940  cd labs
+  941  ls
+  942  cd lab3
+  943  ls
+  944  cat deposit.sh
+  945  ..Due: April 6th, 2016 at 11:59pm
+  946  Write a script that will open all account balance files that are contained in a folder that is specified. The folder will be provided as an argument to your script. You can assume that the folder and balance files will exist before your script is executed. Each account balance file will contain one user's savings and chequing balances (please see the template file that is attached). Your script should then produce an output file that has a summary all users' account savings balances arranged in order from highest total to lowest total. In addition, your script should output a message to the standard out that says which user had the highest total, and which had the lowest total.
+  947  You must use grep, and sort in your script to get full marks
+  948  cat deposit.sh
+  949  cd ../lab5
+  950  ls
+  951  cd 
+  952  cd  ..
+  953  cd ~
+  954  cd labs
+  955  cd lab5
+  956  ls
+  957  cat 
+  958  cd
+  959  help cd
+  960  cd -
+  961  cat accounts
+  962  cd accounts/
+  963  ls
+  964  cat adam_balance.txt 
+  965  sort --help
+  966  adam_balance.txt  diane_balance.txt  jane_balance.txt  louis_balance.txt  mike_balance.txt
+  967  sort adam_balance.txt  diane_balance.txt  jane_balance.txt  louis_balance.txt  mike_balance.txt
+  968  cat adam_balance.txt  diane_balance.txt  jane_balance.txt  louis_balance.txt  mike_balance.txt
+  969  cat > test.txt
+  970  sort test.txt
+  971  sort -n test.txt
+  972  ls
+  973  cd ..
+  974  ls
+  975  cd accounts/
+  976  rm acct_summary
+  977  cd -
+  978  vi filters.sh
+  979  cd accounts
+  980  cd /
+  981  ls
+  982  echo $PATH
+  983  CD ~
+  984  cd ~
+  985  cd labs/lab5
+  986  ls
+  987  ls accounts
+  988  echo accounts/*
+  989  rm accounts/test.txt
+  990  echo accounts/*
+  991  vi filters.sh
+  992  grep --help
+  993  ls accounts
+  994  cat accounts/*
+  995  grep Savings accounts/*
+  996  grep Savings accounts/\*
+  997  grep Savings $1/* | sort -n
+  998  echo $1/*
+  999  echo $1
+ 1000  grep Savings accounts/* | sort -n
+ 1001  grep Savings accounts/* | sort 
+ 1002  grep Savings accounts/* | sort -k 1 
+ 1003  grep Savings accounts/* | sort -k 2
+ 1004  grep Savings accounts/* | sort -n -k 2
+ 1005  sort --h
+ 1006  sort --help
+ 1007  grep Savings accounts/* | sort -n -k 2.1
+ 1008  grep Savings accounts/* | sort -n -k 2.2
+ 1009  grep Savings accounts/* | sort -n -k 2.3
+ 1010  cat > test.txt
+ 1011  cut -c5 test.txt
+ 1012  cut -c5-10 test.txt
+ 1013  cut -c5- test.txt
+ 1014  grep Savings accounts/* | head
+ 1015  head --help
+ 1016  grep Savings accounts/* | sort -n -k 2 | head -n1
+ 1017  grep Savings accounts/* | sort -n -k 2 | tail -n6
+ 1018  grep Savings accounts/* | sort -n -k 2 | tail -n1
+ 1019  var=accounts/*
+ 1020  echo $var
+ 1021  fg
+ 1022  filters.sh accounts
+ 1023  fg
+ 1024  grep Savings accounts/* | sort -n -k 2 | tail -n1
+ 1025  fg
+ 1026  flist=$(echo *)
+ 1027  grep Savings flist | sort -n -k 2 | tail -n1
+ 1028  grep Savings $flist | sort -n -k 2 | tail -n1
+ 1029  cd accounts/
+ 1030  flist=$(echo *)
+ 1031  echo $flist
+ 1032  grep Savings accounts/* | sort -n -k 2 | tail -n1
+ 1033  fg
+ 1034  sed --help
+ 1035  grep Savings *
+ 1036  grep Savings * | sed 's/adam//'
+ 1037  grep Savings * | sed 's/balance.txt//'
+ 1038  grep Savings * | sed 's/_balance.txt//'
+ 1039  grep Savings * | sed 's/_balance.txt:Savings//'
+ 1040  grep Savings * | sed 's/_balance\.txt:Savings//'
+ 1041  grep Savings * | sed 's/_balance\.txt:Savings$//'
+ 1042  man regex
+ 1043  man7  regex
+ 1044  man 7 regex
+ 1045  grep Savings * | sed 's/_balance\.txt:Savings//' -e 's/\$//'
+ 1046  grep Savings * | sed -e 's/_balance\.txt:Savings//' -e 's/\$//'
+ 1047  grep Savings * | sed -e 's/_balance\.txt:Savings//' -e 's/\$//' | sort -k 2
+ 1048  grep Savings * | sed -e 's/_balance\.txt:Savings//' -e 's/\$//' | sort -k 2 -n
+ 1049  sort --help
+ 1050  grep Savings * | sed -e 's/_balance\.txt:Savings//' -e 's/\$//' | sort -k 2 -nr
+ 1051  grep Savings * | sed -e 's/_balance\.txt:Savings//' | sort -k 2 -nr -t \$
+ 1052  grep Savings * | sed -e 's/_balance\.txt:Savings//' | sort -k 2 -nr -t \$grep Savings * | sed -e 's/_balance\.txt:Savings//' | sort -k 2 -nr -t \$
+ 1053  fg
+ 1054  exit
+ 1055  grep Savings * | sed -e 's/_balance\.txt:Savings//' | sort -k 2 -nr -t \$grep Savings * | sed -e 's/_balance\.txt:Savings//' | sort -k 2 -nr -t \$
+ 1056  cd L
+ 1057  cd labs/
+ 1058  cd lab5
+ 1059  grep Savings * | sed -e 's/_balance\.txt:Savings//' | sort -k 2 -nr -t \$grep Savings * | sed -e 's/_balance\.txt:Savings//' | sort -k 2 -nr -t \$
+ 1060  cd accounts/
+ 1061  grep Savings * | sed -e 's/_balance\.txt:Savings//' | sort -k 2 -nr -t \$grep Savings * | sed -e 's/_balance\.txt:Savings//' | sort -k 2 -nr -t \$
+ 1062  history > lab5_tstcmd.txt

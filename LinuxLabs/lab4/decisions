@@ -1,0 +1,15 @@
+count=0
+
+read balance <$1
+
+
+while [ $balance -ge 20 ]; do
+
+#subtract $20
+balance=$((balance - 20))
+echo "$balance" > balance
+
+count=$((count + 1))
+done
+echo "we have received \$20 for $count times."
+
